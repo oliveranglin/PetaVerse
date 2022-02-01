@@ -59,7 +59,9 @@ public class UIcontroller : MonoBehaviour
 
     void Exit(){
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+       // #if UNITY_EDITOR
+        //UnityEditor.EditorApplication.isPlaying = false;
+        //#endif
     }
 
 }

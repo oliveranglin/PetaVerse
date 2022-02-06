@@ -302,7 +302,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 0
+    m_InvertInput: 1
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -456,6 +456,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2225789c5e2a34517b9597b65dcbd826, type: 3}
       propertyPath: m_Name
       value: colloseum model
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2225789c5e2a34517b9597b65dcbd826, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7071182760956848314, guid: 2225789c5e2a34517b9597b65dcbd826, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -636,7 +640,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334381552}
-  m_LocalRotation: {x: 0.0027012585, y: 0.031268824, z: -0.000084506806, w: 0.99950737}
+  m_LocalRotation: {x: 0.0027012778, y: 0.031268857, z: -0.00008450751, w: 0.99950737}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1590,7 +1594,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515473420}
-  m_LocalRotation: {x: -0.015479708, y: 0.031265207, z: 0.00048427118, w: 0.99939114}
+  m_LocalRotation: {x: -0.015479712, y: 0.031265207, z: 0.0004842713, w: 0.99939114}
   m_LocalPosition: {x: 2.0684884, y: 666.7838, z: 343.40778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1740,6 +1744,73 @@ Transform:
   m_Father: {fileID: 276088558}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1722242435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4554274252461005308, guid: 6a085b06f65cd79418803bd0461db167, type: 3}
+  m_PrefabInstance: {fileID: 3744005988512679841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1722242436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722242435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1722242437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722242435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 12
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: 0.1
+--- !u!136 &1722242438
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722242435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0383759
+  m_Height: 3.62854
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.8209839, z: 0.1900177}
+--- !u!54 &1722242439
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722242435}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1723512188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2319,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893357136}
-  m_LocalRotation: {x: -0.015479707, y: 0.031265203, z: 0.00048427106, w: 0.99939114}
+  m_LocalRotation: {x: -0.015479709, y: 0.031265203, z: 0.00048427112, w: 0.99939114}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
